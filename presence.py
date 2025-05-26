@@ -6,7 +6,7 @@ import os
 from dotenv import find_dotenv, load_dotenv
 
 #my .env file is private so u cant use it, u must create your own
-# Make sure the inside of ur .env file includes: CLIENT="your Discord application client ID"
+# Make sure the inside of ur .env file includes: CLIENT="your Discord application client ID (create one in discord developer portal)"
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
 
