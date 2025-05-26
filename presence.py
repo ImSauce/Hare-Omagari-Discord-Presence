@@ -26,7 +26,7 @@ except Exception as e:
 use_custom_time = True
 
 if use_custom_time == True:
-    # Custom start time: May 26, 2025, 10:00 AM UTC
+    # Custom time Example: May 26, 2025, 10:00 AM UTC
     custom_start = datetime.datetime(2025, 5, 26, 10, 0, 0)
     start_time = int(custom_start.timestamp())
 else: #if false, it will use automatic time
