@@ -41,9 +41,9 @@ RPC.update(
     state="Servers hacked",
     details="Programming with Hare",
     start=start_time,
-    large_image="hare", # add the asset in ur application in "rich presence > art assets > add image(s)" in the discord developer portal. (image size must be atleast 512x512 minimum)     
+    large_image="hare_image", # add the asset in ur application in "rich presence > art assets > add image(s)" in the discord developer portal. (image size must be atleast 512x512 minimum)     
     large_text="小鈎ハレ",
-    small_image="green",  # do the same thing in the large_image comment.    
+    small_image="green_verified_image",  # do the same thing in the large_image comment.    
     small_text="Verified",
     party_id="hare_party_001",             
     party_size=[59, 400],                     
