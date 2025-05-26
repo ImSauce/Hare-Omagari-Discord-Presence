@@ -1,6 +1,6 @@
 # HARE OMAGARI DISCORD PRESENCE
 
-## A simple python code to create a custom python presence about hare omagari.
+A simple python code to create a custom python presence about hare omagari.
 
 ## Screenshot
- <img src="screenshot.png" alt="screenshot" />
+<img src="screenshot.png" alt="screenshot" />
