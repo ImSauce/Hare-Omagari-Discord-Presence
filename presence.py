@@ -25,14 +25,14 @@ except Exception as e:
 #switch between custom time or automatic real time
 # Auto Time = 0
 # Custom Time = more than 1
-custom_auto=1
+use_custom_time = True
 
-if custom_auto == 0:
-    start_time = int(time.time())
-else:
+if use_custom_time == True:
     # Custom start time: May 26, 2025, 10:00 AM UTC
     custom_start = datetime.datetime(2025, 5, 26, 10, 0, 0)
     start_time = int(custom_start.timestamp())
+else: #if false, it will use automatic time
+    start_time = int(time.time())
 
 
 
@@ -41,9 +41,9 @@ RPC.update(
     state="Servers hacked",
     details="Programming with Hare",
     start=start_time,
-    large_image="hare_image", # add the asset in ur application in "rich presence > art assets > add image(s)" in the discord developer portal. (image size must be atleast 512x512 minimum)     
+    large_image="hare", # add the asset in ur application in "rich presence > art assets > add image(s)" in the discord developer portal. (image size must be atleast 512x512 minimum)     
     large_text="小鈎ハレ",
-    small_image="green_verified_image",  # do the same thing in the large_image comment.    
+    small_image="green",  # do the same thing in the large_image comment.    
     small_text="Verified",
     party_id="hare_party_001",             
     party_size=[59, 400],                     
