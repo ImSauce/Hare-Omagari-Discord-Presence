@@ -1,13 +1,17 @@
+#import pypresence and dotenv first using pip install in the terminal
 from pypresence import Presence
 import time
 import datetime
 import os
 from dotenv import find_dotenv, load_dotenv
 
+#my .env file is private so u cant use it, u must create your own
+# Make sure the inside of ur .env file includes: CLIENT="your Discord application client ID"
 dotenv_path = find_dotenv()
 load_dotenv(dotenv_path)
 
-# Discord Client ID (use ur own .env with CLIENT="ur discord application client ID")
+
+# Retrieve the Discord Client ID from the .env
 CLIENT_ID = os.getenv("CLIENT")
 RPC = Presence(CLIENT_ID)
 
@@ -18,7 +22,7 @@ except Exception as e:
     print(f"[ERROR] Oh no, something went wrong : {e}")
     exit(1)
 
-
+#switch between custom time or automatic real time
 # Auto Time = 0
 # Custom Time = more than 1
 custom_auto=1
