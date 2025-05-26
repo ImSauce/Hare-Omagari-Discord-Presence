@@ -23,8 +23,6 @@ except Exception as e:
     exit(1)
 
 #switch between custom time or automatic real time
-# Auto Time = 0
-# Custom Time = more than 1
 use_custom_time = True
 
 if use_custom_time == True:
